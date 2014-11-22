@@ -9,11 +9,11 @@
 		//include Facebook PHP SDK
 		require_once('php-sdk/facebook.php');
 		$config = array();
-		$config['appId'] = '711924058896204';
-		$config['secret'] = '663438277a7b13d12afe2f4e3e398dc4';
+		$config['appId'] = 'YOUR_APP_ID';
+		$config['secret'] = 'YOUR_APP_SECRET';
 		$config['fileUpload'] = false; // optionnel
 		$facebook = new Facebook($config);
-		$pageid = "91464739470";
+		$pageid = "YOUR_PAGE_ID";
 		$pagefeed = $facebook->api("/" . $pageid . "/feed");
 		echo "<div class=\"fb-feed\">";
 		 
