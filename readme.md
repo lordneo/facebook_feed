@@ -18,3 +18,7 @@ Le script ne fonctionne que sur les pages Facebook et non sur les personnes.
     + Remplacer "YOUR_PAGE_ID" par l'id de votre page
         * Pour trouver l'ID de votre page: copier l'URL de votre page dans ce site: <http://findmyfacebookid.com/>
         * $pageid = "YOUR_PAGE_ID";
+Bonus: 
+Il est possible d'accéder directement à l'array de data du flux Facebook de sa page:
+- Générer son access token à cette adresse en remplçant dans l'url "APP_ID" et "APP_SECRET": <https://graph.facebook.com/oauth/access_token?client_id=APP_ID&client_secret=APP_SECRET&grant_type=client_credentials>
+- Aller à cette URL et remplacer dans l'url "PUT_YOUR_ACCESS_TOKEN_HERE" par l'access token trouvé juste avant <https://graph.facebook.com/91464739470/feed?access_token=PUT_YOUR_ACCESS_TOKEN_HERE>
